@@ -1,0 +1,6 @@
+from user import User
+
+
+my_user = User('rochelle@fake.com', 'Rochelle', "Rossow", None)
+my_user.save_to_db()
+print(my_user)
