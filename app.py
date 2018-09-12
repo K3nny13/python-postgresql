@@ -1,8 +1,9 @@
+from database import Database
 from user import User
 
 
-# my_user = User(None, 'rochelle@fake.com', 'Rochelle', "Rossouw")
-# my_user.save_to_db()
+Database.init(user="postgres", password="postgress", database="postgres", host="localhost")
+
 
 my_user = User(None, first_name="First", last_name="Last", email="Last@fake.com")
 my_user.save_to_db()
